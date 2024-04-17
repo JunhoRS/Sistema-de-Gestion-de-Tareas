@@ -1,0 +1,72 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsDiv {
+  display: inline-block;
+  margin: 25px auto;
+  width: 90%;
+  background: #0db3f5;
+  color: #fff;
+  padding: 5px 0 0 0;
+  border-radius: 5px;
+  height: auto;
+}
+
+.projectsDiv h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.projectsDiv .content {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 0 0 4px 4px;
+  height: auto;
+  border: 2px solid #bbb8b8;
+}
+
+.project-td {
+  margin:0;
+  padding: 5px;
+  background: #fff;
+}
+.project-td:hover {
+  background: #f5f4f4;
+}
+.project-td a {
+  text-decoration: none;
+}
+.project-td a .left {
+  display: inline-block;
+}
+.project-td a .right {
+  float: right;
+}
+.project-td a .right p {
+  display: inline-block;
+  color: #585555;
+  font-size: 19px;
+  margin: 10px 3px;
+}
+
+.lineDiv {
+  background: #bbb8b8;
+  height: 1px;
+}
+
+.project-td .pTitle {
+  color: #363434;
+  font-size: 22px;
+}
+.project-td .pDate {
+  color: #363434;
+  font-size: 14px;
+  margin: 10px 5px;
+}
+.project-td .pDate i {
+  margin-right: 4px;
+}

@@ -1,0 +1,118 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+header {
+  display: block;
+}
+.profileDiv {
+  background: #0db3f5;
+  color: #fff;
+  border-radius: 5px;
+  height: auto;
+  margin: 10px 20px;
+  width: 40%;
+  padding-top: 10px;
+}
+.headerTitle {
+  margin: 0 20px;
+}
+.headerContent {
+  background: #fff;
+  color: #000;
+  border-radius: 0 0 4px 4px;
+  height: auto;
+  border: 2px solid #bbb8b8;
+  margin-top: 5px;
+  padding: 20px;
+}
+.names {
+  color: #3d3a3a;
+  font-weight: bold;
+}
+.surnames {
+  color: #757171;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+
+input[type='file']#idinputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+label[for="idinputfile"] {
+  font-size: 26px;
+  color: #626262;
+  border: 1px solid #9e9d9d;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase; 
+  text-align: center;
+  display: inline-block;
+  padding: 10px 30px;
+}
+label[for="idinputfile"]:hover {
+  border: 2.2px solid #00A1E0;
+}
+label[for="idinputfile"]:active {
+  border: 2.2px solid #00A1E0;
+}
+
+#sendImageBtn {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  outline: none;
+  display: inline-block;
+  background: #00A1E0;
+  border-color: transparent;
+  color: #fff;
+  font-size: 100%;
+}
+#sendImageBtn:hover{
+  background: #0098d4;
+  cursor: pointer;
+}
+#sendImageBtn:active{
+  background: #0087bd;
+}
+
+#fileName {
+  margin-left: 15px;
+  color: #383636;
+}
+
+.imageDiv {
+  padding: 0 20px;
+  margin:5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+#errorLine {
+  font-weight: bold;
+  color: #ff0000;
+  margin: 20px 0;
+}
+
+@media (max-width:700px){
+  .profileDiv {
+    width: 100%;
+  }
+}

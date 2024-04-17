@@ -1,0 +1,230 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f4f4f5;
+  font-family: 'Poppins', sans-serif;
+}
+
+#sidebar {
+  position: fixed;
+  width: 200px;
+  height: 100%;
+  background: #0db3f5;
+  left: -200px;
+  transition: all 200ms linear;
+}
+
+#navbar {
+  background: #fcfcfc;
+  color: #2c2b2b;
+  padding: 10px 10%;
+}
+.toggle-btn {
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+.navContent .leftNav {
+  width: auto;
+  display: inline-block;
+}
+.navContent .logo {
+  display: inline-block;
+  padding: 0 30px;
+}
+.navContent .logo a {
+  font-size: 25px;
+  text-decoration: none;
+  display: inline-block;
+  color: #2c2b2b;
+}
+.navContent .rightNav {
+  width: auto;
+  float: right;
+}
+.navContent .rightNav button {
+  text-decoration: none;
+  color: #2c2b2b;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.navContent .rightNav button:active {
+  background: #f4f4f5;
+}
+.navContent .rightNav button img {
+  height: 45px;
+  width: 45px;
+}
+.navContent .rightNav button i {
+  margin: 15px 10px 0 10px;
+  font-size: 23px;
+  transform: rotate(180deg);
+  float: right;
+}
+
+#sidebar.active {
+  left: 0px;
+}
+#sidebar ul a li {
+  list-style: none;
+  padding: 15px 10px;
+  border-bottom: 1px solid #00a2ff4d;
+  text-align: center;
+}
+#sidebar ul a {
+  color: #fff;
+  text-decoration: none;
+}
+#sidebar ul li:hover {
+  background: #06a5e4;
+}
+
+.logo {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto; 
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 230px;
+  top: 20px;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 3px solid #000;
+}
+
+.floatNav {
+  display: none;
+}
+.imageProfileBig {
+  width: 140px;
+  height: 140px;
+  margin: 7px auto 5px 15%;
+  outline: none;
+  border-radius: 50%;
+}
+.imageProfileSmall {
+  border-radius: 50%;
+}
+.updateImageBtn {
+  width: 80%;
+  margin: 5px 8%;
+  background: #fff;
+  border: 1px solid #4e4b4b;
+  color: #4e4b4b;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.updateImageBtn:hover {
+  background: #dddddd;
+}
+.logOutBtn {
+  width: 80%;
+  margin: 5px 8%;
+  background: #0db3f5;
+  border: 1px solid #0db3f5;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.logOutBtn:hover {
+  background: #0098d4;
+  border-color: #0098d4;
+}
+.logOutBtn:active {
+  background: #0087bd;
+  border-color: #0087bd;
+}
+
+.floatNavBlock {
+  position: absolute;
+  background: #fff;
+  border: 2px solid #e2e2e2;
+  width: 200px;
+  height: 270px;
+  right: 5%;
+  border-radius: 10px;
+}
+
+
+
+#loadDiv {
+  background-color: #fff;
+  height:100%;
+  width: 100%;
+  position:fixed;      
+  -moz-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+
+#load {
+  border: 15px solid #ccc;
+  border-top-color:#0db3f5;
+  border-top-style:groove;
+  height:100px;
+  width:100px;
+  border-radius:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (min-width:1220px){
+  .navContent .leftNav { width: 88%; }
+}
+
+@media (max-width:1220px) and (min-width:1050px){
+  .navContent .leftNav { width: 86%; }
+}
+
+@media (max-width:1050px) and (min-width:850px){
+  .navContent .leftNav { width: 83%; }
+}
+
+@media (max-width:850px) and (min-width:660px){
+  .navContent .leftNav { width: 78%; }
+}
+
+@media (max-width:660px) and (min-width:570px){
+  .navContent .leftNav { width: 74%; }
+}
+
+
+@media (max-width:570px){
+  .navContent .logo { display: none; }
+}

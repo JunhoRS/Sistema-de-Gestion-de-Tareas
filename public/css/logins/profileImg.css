@@ -1,0 +1,184 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.registerDiv {
+  width: 520px;
+  height: 420px;
+  color: #000;
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+
+h1 {
+  margin: 8px 0 20px 0;
+  color: #555353;
+}
+p {
+  color: #3a3636;
+  margin: 25px 20px;
+}
+.inputDiv {
+  padding: 0 20px;
+  margin:5px;
+}
+input[type='file']#idinputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+label[for="idinputfile"] {
+  font-size: 26px;
+  color: #626262;
+  border: 1px solid #9e9d9d;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase; 
+  text-align: center;
+  display: inline-block;
+  padding: 10px 30px;
+}
+label[for="idinputfile"]:hover {
+  border: 2.2px solid #00A1E0;
+}
+label[for="idinputfile"]:active {
+  border: 2.2px solid #00A1E0;
+}
+
+.inputBtnSend, .inputBtnSkip {
+  width: 48.5%;
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 100%;
+  font-weight: bold;
+  outline: none;
+  display: inline-block;
+}
+.inputBtnSend:hover{
+  background: #0098d4;
+  cursor: pointer;
+}
+.inputBtnSend:active{
+  background: #0087bd;
+}
+.inputBtnSend {
+  background: #00A1E0;
+  border-color: transparent;
+  color: #fff;
+}
+.inputBtnSkip {
+  background: #faf8f8;
+  border: 2px solid #c4c4c4;
+  color: #302c2c;
+}
+.inputBtnSkip:hover, .inputBtnSkip:active {
+  background: #ece9e9;
+  cursor: pointer;
+}
+
+#fileName {
+  margin-left: 15px;
+  color: #383636;
+}
+
+.imageDiv {
+  padding: 0 20px;
+  margin:5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.inputBtnLink {
+  width: 96%;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fff;
+  color: #00A1E0;
+  font-size: 100%;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+.link {
+  color: #00A1E0;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.link:hover {
+  color: #00A1E0;
+  font-size: 20px;
+}
+
+#errorLine {
+  color: #ff0000;
+  font-weight: bold;
+  list-style: none;
+}
+
+
+@media (max-width: 550px) and (min-width: 400px){
+  .registerDiv {
+    width: 420px;
+  }
+}
+
+@media (max-width: 400px) and (min-width: 270px){
+  .registerDiv {
+    width: 320px;
+  }
+  label[for="idinputfile"] {
+    margin-right: 80%;
+    margin-bottom: 20px;
+  }
+  #fileName {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 270px){
+  .registerDiv {
+    width: 220px;
+  }
+  label[for="idinputfile"] {
+    margin-right: 80%;
+    margin-bottom: 20px;
+  }
+  #fileName {
+    margin-left: 0;
+  }
+}
+
+@media (max-height:530px) and (min-height:370px){
+  .registerDiv {
+    top: 60%;
+  }
+}
+
+@media (max-height:370px){
+  .registerDiv {
+    top: 80%;
+  }
+}

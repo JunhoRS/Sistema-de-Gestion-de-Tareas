@@ -1,0 +1,145 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+header {
+  display: block;
+}
+.projectDiv {
+  background: #0db3f5;
+  color: #fff;
+  border-radius: 5px;
+  height: auto;
+  margin: 10px 20px;
+  width: 80%;
+  padding-top: 10px;
+}
+.projectDiv h2 {
+  margin: 0 20px;
+}
+.headerContent {
+  background: #fff;
+  color: #000;
+  border-radius: 0 0 4px 4px;
+  height: auto;
+  border: 2px solid #bbb8b8;
+  margin-top: 5px;
+  padding: 20px;
+}
+
+
+.task {
+  margin: 5px 10px;
+}
+.task-title {
+  font-weight: bold;
+  color: #4d4848;
+  margin: 10px 0;
+}
+.task-desc {
+  color: #4d4848;
+  margin: 13px 0;
+}
+.task a {
+  text-decoration: none;
+}
+.fileDiv {
+  border: 2px solid #bbb8b8;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 5px 15px 5px 0;
+}
+.fileDiv:hover, .fileDiv:active {
+  background: #f1efef;
+  cursor: pointer;
+}
+.fileDiv p {
+  display: inline-block;
+  font-size: 17px;
+  color: #4d4848;
+}
+.fileDiv p i {
+  margin: 0 10px;  
+}
+.completBtns {
+  margin: 10px 0;
+  color: #4d4848;
+}
+.completBtns button {
+  padding: 2px 20px;
+  color: #fff;
+  border: none;
+  background: #1ad42a;
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+}
+.completBtns button:hover {
+  background: #13a81f;
+  cursor: pointer;
+}
+
+.formDiv {
+  margin: 5px 10px;
+  padding: 10px;
+}
+
+.btnAddTask {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 17px;
+  outline: none;
+  width: 20%;
+  background: #0db3f5;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btnAddTask:hover {
+  background: #0098d4;
+}
+.btnAddTask:active {
+  background: #0087bd;
+}
+#btnSendTask:hover, .btnAddTask:hover {
+  background: #0098d4;
+}
+#btnSendTask:active, .btnAddTask:active {
+  background: #0087bd;
+}
+input[type='file']#idinputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+label[for="idinputfile"] {
+  font-size: 22px;
+  color: #626262;
+  border: 2px solid #bbb8b8;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  text-transform: uppercase; 
+  text-align: center;
+  display: inline-block;
+  padding: 1px 30px;
+  margin: 4px 5px 10px 0;
+}
+label[for="idinputfile"]:hover {
+  border: 2px solid #00A1E0;
+}
+label[for="idinputfile"]:active {
+  border: 2px solid #00A1E0;
+}
+
+
+
+@media (max-width:570px){
+  .btnAddTask {
+    width: 100%;
+  }
+}

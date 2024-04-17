@@ -1,0 +1,80 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+.pendingDiv {
+  width: 31%;
+  padding: 20px;
+  display: inline-block;
+}
+.completedDiv {
+  width: 31%;
+  padding: 20px 0;
+  display: inline-block;
+}
+.incompleteDiv {
+  width: 31%;
+  padding: 20px;
+  display: inline-block;
+}
+.projectsDiv {
+  display: inline-block;
+  width: 90%;
+  background: #0db3f5;
+  color: #fff;
+  border-radius: 5px;
+  height: auto;
+  padding: 10px;
+}
+.tasksDiv {
+  background: #fff;
+  color: #000;
+  border-radius: 0 0 4px 4px;
+  height: auto;
+  border: 2px solid #bbb8b8;
+  margin-top: 5px;
+}
+
+.tasksDiv ul a {
+  text-decoration: none;
+  color: #242121;
+}
+.tasksDiv ul a li {
+  list-style: none;
+  padding: 15px 10px;
+  border-top: 1px solid #d6d4d4;
+  text-align: center;
+}
+.tasksDiv ul a li:hover {
+  background: #f4f4f5;
+}
+.progressLine {
+  margin: 10px 20px;
+  height: 7px;
+  border: 2px solid #bbb8b8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+#pendingLine {
+  background-color: #cfe0e4;
+}
+#incompleteLine {
+  background-color: #ff381e;
+}
+#completedLine {
+  background-color: #00ff37;
+}
+
+
+@media (max-width:570px){
+  .main {
+    display: block;
+  }
+  .pendingDiv, .completedDiv, .incompleteDiv {
+    width: 90%;
+    padding: 15px 0;
+    display: block;
+    margin: 0 auto;
+  }
+}

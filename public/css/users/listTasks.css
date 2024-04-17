@@ -1,0 +1,200 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+header {
+  display: block;
+}
+.projectDiv {
+  background: #0db3f5;
+  color: #fff;
+  border-radius: 5px;
+  height: auto;
+  margin: 10px 20px;
+  padding-top: 10px;
+}
+.projectDiv h2 {
+  margin: 0 20px;
+}
+.headerContent {
+  background: #fff;
+  color: #000;
+  border-radius: 0 0 4px 4px;
+  height: auto;
+  border: 2px solid #bbb8b8;
+  margin-top: 5px;
+  padding: 20px;
+}
+#imagesDiv {
+  margin: 5px 25px;
+}
+.membersDiv img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.pendingDiv {
+  width: 33%;
+  padding: 20px;
+  display: inline-block;
+}
+.completedDiv {
+  width: 33%;
+  padding: 20px 0;
+  display: inline-block;
+}
+.incompleteDiv {
+  width: 33%;
+  padding: 20px;
+  display: inline-block;
+}
+.tasksDiv {
+  display: inline-block;
+  width: 100%;
+  background: #0db3f5;
+  color: #fff;
+  border-radius: 5px;
+  height: auto;
+}
+.tasksDiv h3 {
+  margin: 10px 20px;
+}
+.tasksList {
+  background: #fff;
+  color: #000;
+  border-radius: 0 0 4px 4px;
+  height: auto;
+  border: 2px solid #bbb8b8;
+  margin-top: 5px;
+}
+
+.tasksList ul {
+  text-decoration: none;
+  color: #242121;
+}
+.tasksList ul li {
+  list-style: none;
+  padding: 15px 10px;
+  border-top: 1px solid #d6d4d4;
+}
+.tasksList ul li:hover {
+  background: #f4f4f5;
+}
+.progressLineTask {
+  margin: 2px 20px;
+  height: 7px;
+  border: 2px solid #bbb8b8;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+#pendingLine {
+  background-color: #cfe0e4;
+}
+#incompleteLine {
+  background-color: #ff381e;
+}
+#completedLine {
+  background-color: #00ff37;
+}
+
+.titleTask {
+  font-weight: bold;
+  color: #4d4848;
+  margin: 10px 0;
+}
+.descTask {
+  color: #4d4848;
+  margin: 13px 0;
+}
+.fileTask {
+  color: #302d2d;
+  margin: 10px 0;
+}
+.fileTask i {
+  margin-right: 10px;
+}
+
+.progressLine {
+  margin: 10px 10px 20px 10px;
+}
+.progress {
+  width: 100%;
+  max-width: 85%;
+  height: 10px;
+  border: 2px solid #bbb8b8;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.progressIncomplete {
+	background-color: #ff0000;
+}
+.progress0 {
+  background-color: #ff381e;
+}
+.progress20 {
+  background-color: #f8750a;
+}
+.progress40 {
+  background-color: #faa330;
+}
+.progress60 {
+  background-color: #fadc30;
+}
+.progress80 {
+  background-color: #b9f80a;
+}
+.progress100 {
+  background-color: #00ff37;
+}
+
+.percent {
+  float: right;
+  font-size: 19px;
+  font-weight: bold;
+  color: #363232;
+}
+.lineDiv {
+  background: #bbb8b8;
+  height: 1.4px;
+  margin: 10px 0;
+}
+.progress-title {
+  color: #4d4848;
+  font-size: 17px;
+}
+#statementText {
+  display: inline-block;
+  font-weight: bold;
+}
+.CompletedReturn {
+	color: #1ad42a;
+}
+.IncompleteReturn {
+	color: #ff381e;
+}
+.delivery-date {
+  color: #4d4848;
+  font-size: 17px;
+  margin: 8px 0;
+}
+.delivery-date i {
+  margin: 0 8px;
+}
+
+
+@media (max-width:570px){
+  .main {
+    display: block;
+  }
+  .pendingDiv, .completedDiv, .incompleteDiv {
+    width: 90%;
+    padding: 15px 0;
+    display: block;
+    margin: 0 auto;
+  }
+}

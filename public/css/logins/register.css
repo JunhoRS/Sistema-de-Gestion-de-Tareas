@@ -1,0 +1,217 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.registerDiv {
+  width: 520px;
+  height: 420px;
+  color: #000;
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 20px 30px;
+}
+
+.h2 {
+  margin: 8px 0;
+  color: #555353;
+}
+
+.name-surnameDiv {
+  display: inline-block;
+}
+.inputName, .inputSurname{
+  width: 48.5%;
+  border: 1px solid #9e9d9d;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 6px;
+  height: 40px;
+  font-size: 100%;
+  text-indent: 10px;
+  font-weight: bold;
+  color: #626262;
+}
+.inputName {
+  float: left;
+}
+.inputSurname {
+  float: right;
+}
+
+.formPasswords {
+  margin-top: 20px;
+}
+.inputForm {
+  width: 100%;
+  border: 1px solid #9e9d9d;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 10px;
+  height: 40px;
+  font-size: 100%;
+  text-indent: 10px;
+  font-weight: bold;
+  color: #626262;
+}
+
+form input::placeholder {
+  color: #9e9d9d;
+}
+
+.inputBtn {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  background: #00A1E0;
+  border-color: transparent;
+  color: #fff;
+  font-size: 100%;
+  font-weight: bold;
+  outline: none;
+}
+.inputBtn:hover {
+  background: #0098d4;
+  cursor: pointer;
+}
+.inputBtn:active {
+  background: #0087bd;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus {
+  border: 2.2px solid #00A1E0;
+}
+
+.inputBtnLink {
+  width: 96%;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fff;
+  color: #00A1E0;
+  font-size: 100%;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+.link {
+  color: #00A1E0;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.link:hover {
+  color: #00A1E0;
+  font-size: 20px;
+}
+
+.errorLine {
+  font-weight: bold;
+  color: #ff0000;
+  margin: 20px 0;
+}
+
+.errorInput {
+  border: 2px solid #ff0000;
+  width: 99%;
+}
+.errorInputNames {
+  border: 2px solid #ff0000;
+  width: 48%;
+}
+
+.passLines {
+  margin: 10px 0 20px 20px;
+  color: #ff0000;
+  font-weight: bold;
+  display: none;
+  list-style: none;
+}
+
+#checkRegisterDiv {
+  display: none;
+}
+
+.inputBtnCancel, .inputBtnSubmit {
+  width: 48.6%;
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 100%;
+  font-weight: bold;
+  outline: none;
+  display: inline-block;
+}
+.inputBtnSubmit {
+  background: #00A1E0;
+  border-color: transparent;
+  color: #fff;
+}
+.inputBtnSubmit:hover {
+  background: #0098d4;
+  cursor: pointer;
+}
+.inputBtnSubmit:active {
+  background: #0087bd;
+}
+.inputBtnCancel {
+  background: #faf8f8;
+  border: 2px solid #c4c4c4;
+  color: #302c2c;
+}
+.inputBtnCancel:hover, .inputBtnCancel:active {
+  background: #ece9e9;
+  cursor: pointer;
+}
+.inputBtnCancel a {
+  text-decoration: none;
+  color: #302c2c;
+}
+
+.resultsValid {
+  margin: 20px 0;
+}
+  
+@media (max-width: 550px) and (min-width: 400px){
+  .registerDiv {
+    width: 420px;
+  }
+}
+
+@media (max-width: 400px) and (min-width: 270px){
+  .registerDiv {
+    width: 320px;
+  }
+}
+
+@media (max-width: 270px){
+  .registerDiv {
+    width: 220px;
+  }
+}
+
+@media (max-height:330px) and (min-height:220px){
+  .registerDiv {
+    top: 70%;
+  }
+  .inputSurname { margin-right: -3.6%; }
+  .inputName, .inputSurname { width: 50%; }
+}
+
+@media (max-height:220px){
+  .registerDiv {
+    top: 80%;
+  }
+  .inputSurname { margin-right: -3.6%; }
+  .inputName, .inputSurname { width: 50%; }
+}
